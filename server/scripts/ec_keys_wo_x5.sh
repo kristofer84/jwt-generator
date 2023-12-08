@@ -11,3 +11,6 @@ echo $(jq \
 '. + {$kid, "use": "sig"}' ec_jwk.json) > ec_jwk.json
 
 rm ec_public_key.pem
+
+mv ec_private_key.pem ../src/keys
+mv ec_jwk.json ../src/keys

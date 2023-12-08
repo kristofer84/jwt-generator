@@ -16,3 +16,6 @@ jq \
 # openssl rsa -pubin -in rsa_public_key.pem -noout -modulus
 
 rm rsa_public_key.pem
+
+mv rsa_private_key.pem ../src/keys
+mv rsa_jwk.json ../src/keys
